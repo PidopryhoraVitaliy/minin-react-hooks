@@ -11,9 +11,10 @@ function Effect() {
   //console.log('component render');
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/${type}`)
+    setData({data: 'uncomment the fetch request'})
+    /*fetch(`https://jsonplaceholder.typicode.com/${type}`)
       .then(response => response.json())
-      .then(json => setData(json))
+      .then(json => setData(json))*/
   }, [type])
 
   const mouseMoveHandler = event => {
@@ -24,7 +25,7 @@ function Effect() {
   }
 
   useEffect(() => {
-    console.log('ComponentDidMount');
+    //console.log('ComponentDidMount');
     window.addEventListener('mousemove', mouseMoveHandler)
     return () => {
       window.removeEventListener('mousemove', mouseMoveHandler)
