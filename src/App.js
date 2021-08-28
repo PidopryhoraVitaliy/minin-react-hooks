@@ -11,18 +11,16 @@ import './index.css'
 function App() {
 
   return (
-    <div className="App" style={{ paddingTop: '25px', paddingLeft: '100px' }}>
-
-      <Callback/>
-      <Context/>
-      <Counter/>
-      <Effect/>
-      <Ref/>
-      <Memo/>
-      
-
+    <div className="conteiner ps-5 pt-2">
+      <Context />
+      <Counter />
+      <Effect />
+      <Ref />
+      <Memo />
+      <Callback />
     </div>
-  );
+  )
+  
 }
 
 export default App;
